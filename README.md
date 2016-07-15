@@ -17,6 +17,9 @@ brew install curl wget
 ```
 
 `nc`
+```
+sudo apt-get install netcat
+```
 
 `oh my zsh`
 
