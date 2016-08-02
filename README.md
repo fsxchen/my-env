@@ -24,13 +24,18 @@ set -g mode-keys vi
 sudo apt-get install curl wget
 brew install curl wget
 ```
-## `starred` github tool
+### `starred` github tool
 
 ```
 pip install starred
 
 export GITHUB_TOKEN=yourtoken
 starred --repository awesome-stars --sort
+
+```
+## Usage
+```
+starred --username fouber --sort >> README.md
 
 ```
 
