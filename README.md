@@ -11,7 +11,7 @@ brew install tmux
 ```
 # bind R source-file ~/.tmux.conf ; display-message "Config reloaded.."
 unbind C-b
-set -g prefix C-a
+set -g prefix C-x
 # if you want to use copy; shoul use this
 set -g mode-keys vi
 ➜
@@ -24,6 +24,16 @@ set -g mode-keys vi
 sudo apt-get install curl wget
 brew install curl wget
 ```
+## `starred` github tool
+
+```
+pip install starred
+
+export GITHUB_TOKEN=yourtoken
+starred --repository awesome-stars --sort
+
+```
+
 
 ## `nc`
 ```
