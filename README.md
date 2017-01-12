@@ -59,12 +59,15 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 ## `pyenv`
 
 ### install
+#### ubuntu下的安装
 ```
 sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
 		 libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils
 ```
+#### mac下的依赖安装
 ```
 brew install readline xz
+brew install pyenv
 ```
 
 
