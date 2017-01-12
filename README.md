@@ -68,6 +68,7 @@ sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
 ```
 brew install readline xz
 brew install pyenv
+brew install pyenv-virtualenv
 ```
 
 
