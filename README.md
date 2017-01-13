@@ -73,3 +73,11 @@ brew install pyenv-virtualenv
 
 
 ### zen coding
+
+## 使用nvm来安装nodejs
+
+### 安装nvm层
+```
+git clone https://github.com/creationix/nvm.git
+source nvm/nvm.sh
+```
