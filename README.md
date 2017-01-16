@@ -71,6 +71,12 @@ brew install pyenv
 brew install pyenv-virtualenv
 ```
 
+### 安装加速
+
+
+先手动下载对应的版本压缩包，放到`~/.pyenv/cache/`下面.
+
+
 
 ### zen coding
 
