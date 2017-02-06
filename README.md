@@ -2,7 +2,7 @@
 快速搭建一个开发的工作环境
 
 
-## 基本工具
+## 一、基本工具
 
 ### 终端神器`tmux`
 
@@ -54,7 +54,7 @@ starred --username fouber --sort >> README.md
 
 ```
 
-## 网络工具
+## 二、网络工具
 ### 网络瑞士军刀`nc`
 netcat工具
 ```
@@ -67,7 +67,7 @@ sudo apt-get install netcat
 
 
 
-## 开发环境和工具
+## 三、开发环境和工具
 
 ### python虚拟环境`pyenv`
 与之类似的还有virtualenv这样的工具。
