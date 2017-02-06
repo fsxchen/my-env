@@ -17,7 +17,6 @@ unbind C-b
 set -g prefix C-x
 # if you want to use copy; shoul use this
 set -g mode-keys vi
-➜
 ```
 
 ### `oh my zsh`
@@ -32,13 +31,20 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 ```
 
 
-### `git`的安装和配置
+### `wget`的安装
 
 
 ```
 sudo apt-get install curl wget
 brew install curl wget
 ```
+
+### `git-flow`安装
+
+```
+apt-get install git-flow
+```
+
 ### `starred` github tool
 一个查看github的工具
 ```
@@ -46,7 +52,6 @@ pip install starred
 
 export GITHUB_TOKEN=yourtoken
 starred --repository awesome-stars --sort
-
 ```
 ### Usage
 ```
