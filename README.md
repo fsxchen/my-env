@@ -64,6 +64,28 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
 		 libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils
 ```
+
+```
+$ git clone https://github.com/yyuu/pyenv.git ~/.pyenv
+
+```
+
+```
+$ echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bash_profile
+$ echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bash_profile
+```
+
+```
+$ echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
+```
+
+#### linux下安装`pyenv-virtualenv`
+```
+$ git clone https://github.com/yyuu/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
+
+$ echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bash_profile
+```
+
 #### mac下的依赖安装
 ```
 brew install readline xz
