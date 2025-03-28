@@ -1,0 +1,44 @@
+alias rm="trash -F"
+alias "pipi"="pip install -i https://pypi.tuna.tsinghua.edu.cn/simple"
+alias "gitlog"="git log --graph --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%an%C(reset)%C(bold yellow)%d%C(reset) %C(dim white)- %s%C(reset)' --all
+"
+
+
+git() {
+    if [[ $@ == "log" ]]; then
+        command git log --graph --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%an%C(reset)%C(bold yellow)%d%C(reset) %C(dim white)- %s%C(reset)' --all
+    else
+        command git "$@"
+    fi
+}
+
+#function git() {
+#    case $* in
+#        commit* ) cz commit ;; # or yarn commit
+#        * ) command git "$@" ;;
+#    esac
+#}
+
+alias vim=nvim
+alias vi=nvim
+alias ls=lsd
+alias tree=broot
+alias ping=gping
+alias du=dust
+alias duf=df
+alias cat=bat
+alias top=gtop
+
+# git
+alias g=git
+
+# ansible
+alias a=ansible
+
+# proxy
+alias proxy="export http_proxy=socks5://localhost:7890 && export https_proxy=socks5://localhost:7890"
+alias unproxy="unset http_proxy && unset https_proxy"
+
+
+# go
+alias gom="go mod"
