@@ -4,6 +4,72 @@ alias "gitlog"="git log --graph --format=format:'%C(bold blue)%h%C(reset) - %C(b
 "
 
 
+# some functions
+
+fastcd () {
+	if [ $# -eq 0 ]
+	then
+		cd $HOME
+		return
+	fi
+	base_dir=$1
+	if [ ! -d $base_dir ]
+	then
+		echo "Error"
+		exit 1
+	fi
+	if [ $# -eq 1 ]
+	then
+		cd $base_dir
+		return
+	fi
+	target_key="$2"
+	targets=$(ls $base_dir | grep ^${target_key})
+	if [ ${#targets[@]} -eq 0 ]
+	then
+		cd $base_dir
+		return
+	fi
+	for t in "${targets[@]}"
+	do
+		if [ -d $base_dir/$t ]
+		then
+			cd $base_dir/$t
+			return
+		fi
+	done
+	cd $HOME
+}
+
+pd () {
+	base_dir=$HOME/arron/security/pd
+	if [ $# -eq 0 ]
+	then
+		fastcd $base_dir
+		return
+	fi
+	if [ $# -eq 1 ]
+	then
+		fastcd $base_dir $1
+		return
+	fi
+}
+
+hez () {
+	cd ~/arron/work/hez/
+	base_dir=$HOME/arron/work/hez
+	if [ $# -eq 0 ]
+	then
+		fastcd $base_dir
+		return
+	fi
+	if [ $# -eq 1 ]
+	then
+		fastcd $base_dir $1
+		return
+	fi
+}
+
 git() {
     if [[ $@ == "log" ]]; then
         command git log --graph --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%an%C(reset)%C(bold yellow)%d%C(reset) %C(dim white)- %s%C(reset)' --all
